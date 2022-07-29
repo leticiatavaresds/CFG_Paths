@@ -1,14 +1,19 @@
 ## CFG_Paths
 
-É recomendado [criar uma virtual-env em python](https://docs.python.org/pt-br/3/library/venv.html) para instalar 
-o projeto para que não haja o risco de conflitos entre as bibliotecas. O projeto foi feito em python3 versão 3.10 e caso não o tenha instalado nessa versão, é necessário instalá-lo antes de seguir para os próximos passos.
+O projeto foi feito utilizando Anaconda 4.13.0 e a linguagem python3 versão 3.10. Inicialmente, é necessário criar um ambiente virtual com a versão correta do python e as bibliotecas utlizadas devidamente instaladas, para isso execute o comando:
 
-Com o python instalado, deve-se instalar as bibliotecas utilizadas especificadas no documento "requirements.txt", a instalação pode ser feita por:
 ```sh
-$ pip3 install -r requirements.txt
+$ conda env create --file environment.yml
 ```
-Com as bibliotecas instaladas, basta apenas rodar o projeto com o comando:
+
+Após a criação do ambiente, é necessário ativá-lo através do comando:
+```sh
+$ conda activate CFG_paths
+```
+
+Com o ambiente instalado e as bibliotecas instaladas, basta apenas rodar o projeto com o comando:
 ```sh
 $ python app.py
 ```
-A aplicação ficará então disponível no endereço endicado no cmd.
+
+A aplicação ficará então disponível no endereço endicado no cmd podendo ser acessado por qualquer navegador.
