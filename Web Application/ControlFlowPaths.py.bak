@@ -319,7 +319,7 @@ def make_file_nodes(name_file_export, path_code,nodes_covered, num_cond):
 
 
     script = f"""# Script Teste Cobertura de Nós
-TR_nos = set({list(nodes_covered)})
+TR_nos = set({list(nodes_covered)})"   
 """  
 
     path_code = os.linesep.join([s for s in path_code.splitlines() if s])
