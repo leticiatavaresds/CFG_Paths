@@ -1,4 +1,4 @@
-## CFG_Paths
+  ## Geração de CFG e visuazlização de caminhos
 
 O projeto foi feito utilizando Anaconda 4.13.0 e a linguagem python3 versão 3.10. Inicialmente, é necessário criar um ambiente virtual com a versão correta do python e as bibliotecas utlizadas devidamente instaladas, para isso execute o comando:
 
