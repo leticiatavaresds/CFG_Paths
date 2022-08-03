@@ -1,8 +1,8 @@
   ## Geração de CFG e visualização de caminhos
 
-O projeto foi feito utilizando Anaconda 4.13.0 e a linguagem python3 versão 3.10. O usuário tem duas opções de utilizar a automação, pode-se rodar o código através do notebook ipynb presente no repositório ou pela aplicação web contida na pasta "Web aplication" 
+O projeto foi feito utilizando Anaconda 4.13.0 e a linguagem python3 versão 3.10. O usuário tem duas opções de utilizar a automação, pode-se rodar o código através do notebook ipynb presente no repositório ou pela aplicação web contida na pasta "Web Application" 
 
-### Aplicação Web
+### Opção 2 - Aplicação Web
 Inicialmente, é necessário criar um ambiente virtual com a versão correta do python e as bibliotecas utlizadas devidamente instaladas, para isso execute o comando:
 
 ```sh
