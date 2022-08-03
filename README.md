@@ -1,6 +1,6 @@
   ## Geração de CFG e visualização de caminhos
 
-O projeto foi feito utilizando Anaconda 4.13.0 e a linguagem python3 versão 3.10. O usuário tem duas opções de utilizar a automação, pode-se rodar o código através do notebook ipynb presente no repositório ou pela aplicação web contida na pasta "Web Application" 
+O projeto consiste em uma automação que em sua atual versão objetiva ser um complemento para o algoritmo de geração de CFG do fuzzing book para auxílio de testes de cobertura de grafos de programas mais simples em python. Há ainda muitas melhorias que podem ser implementadas para que se torne uma ferramenta robusta capaz de auxiliar profissionais com os mais complexos testes de softwares. A automação foi implementada utilizando Anaconda 4.13.0 e a linguagem python3 versão 3.10. O usuário tem duas opções de utilizá-la, pode-se rodar o código através do notebook ipynb presente no repositório ou pela aplicação web contida na pasta "Web Application" 
 
 ### Opção 2 - Aplicação Web
 Inicialmente, é necessário criar um ambiente virtual com a versão correta do python e as bibliotecas utlizadas devidamente instaladas, para isso execute o comando:
