@@ -3,12 +3,8 @@
 # Índice
 
 - [Introdução](#introdução)
-- [Microdados ENADE](#microdados-enade)
-- [Obtenção dos Dados](#obtenção-dos-dados)
-- [Modelagem de Dados](#modelagem-de-dados)
-- [Tratamento de Dados](#tratamento-de-dados)
-- [Análise Exploratória](#análise-exploratória)
-- [Modelo de Predição](#modelo-de-predição)
+- [Metodologia](#metodologia)
+- [Implementação](#implementação)
 - [Execução](#execução)
 - [Licença](#licença)
 
@@ -25,6 +21,9 @@ Cada nó do grafo pode ter um ou mais filhos dependendo do tipo de instrução q
 Com acesso ao código fonte fornecido pelo usuário mais a estrutura do CFG produzido, nossa abordagem analisa cada linha do script, já que para cada instrução do programa é necessário verificar seu conteúdo para modificá-lo corretamente de forma que ele consiga gerar o caminho certo para qualquer entrada, isso porque percebe-se que algumas instruções não afetam o fluxo de execução enquanto outras como os comandos for ou while ou instruções condicionais como if, elif e else  ou palavras reservadas break, continue ou return exercem forte influência no fluxo. 
   
 Após modificações no script do programa de acordo com as análises das linhas, temos um novo script que reflete o CFG criado, ou seja, além das linhas originais, há também linhas que adicionam os nós nas partes certas do código para que quando seja executado, o caminho que a execução percorre no grafo seja devidamente identificado. Nossa automação cria então três novos scripts que podem ser utilizados para verificar o caminho que um teste concreto percorre para os critérios de cobertura de nós, cobertura de arcos e cobertura de pares de arcos. O Script também apresenta o conjunto TR do critério para o CFG e encerra a execução caso todos os critérios do conjunto sejam satisfeitos.
+
+[⬆ Voltar ao topo](#geração-de-cfg-e-visualização-de-caminhos)<br>
+
   
 # Implementação
 
@@ -67,6 +66,9 @@ O usuário pode então realizar o download desses arquivos e utilizá-los para t
 
 Nota-se pela figura que o script encerra a execução logo após o segundo teste, isso porque o conjunto composto pelos dois testes satisfaz todos os requisitos. Porém, se houvesse requisitos insatisfatíveis como acontece no caso de cobertura de pares de arcos desse problema, a execução se manteria em loop até que o usuário forçasse sua parada, exibindo a mensagem “Há chances dos pares de arcos não serem alcançáveis. Verifique o grafo.” a partir de determinado teste. O usuário pode então tentar verificar quais são são os requisitos insatisfatíveis através do grafo gerado e manualmente retirá-los do conjunto TR declarado no script de teste.
 
+[⬆ Voltar ao topo](#geração-de-cfg-e-visualização-de-caminhos)<br>
+
+
 # Execução
 
 ### Opção 2 - Aplicação Web
@@ -85,6 +87,9 @@ Com o ambiente instalado e as bibliotecas instaladas, basta apenas rodar o proje
 ```sh
 $ python app.py
 ```
+
+[⬆ Voltar ao topo](#geração-de-cfg-e-visualização-de-caminhos)<br>
+
 
 A aplicação ficará então disponível no endereço endicado no cmd podendo ser acessado por qualquer navegador.
 
